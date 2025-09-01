@@ -2,7 +2,7 @@
 
 {% block body %}
 <section class="header">
-  <h2 class="title">Dead simple Todolists.</h2>
+  <h2 class="title">Wag kang tamad gumawa ka ng <br>Todolists.</h2>
   <div class="row">
     <div class="three columns value-prop"></div>
     <div class="six columns">
@@ -11,6 +11,9 @@
         <dl>
           <dd>{{ form }}
           <dt><input type="submit" class="button button-primary" value="Start one now">
+            <br>
+            <br>
+            <p>Want to keep your lists? <a href="{% url 'auth:register' %}">Register Now!</a>.</p>
         </dl>
       </form>
     </div>
